@@ -1,0 +1,773 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+* {
+   font-family: "DM Sans";
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   outline: none;
+   border: none;
+   text-decoration: none;
+   /* text-transform: capitalize; */
+   transition: all 0.2s linear;
+   line-height: 1.5;
+}
+
+html {
+   font-size: 100%;
+   overflow-x: hidden;
+   scroll-behavior: smooth;
+}
+
+
+/* Button */
+.btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: .2rem .9rem;
+   background: #FFBB62;
+   color: #000;
+   cursor: pointer;
+   font-size: 1.7rem;
+   border-radius: 10rem;
+   width: 4rem;
+}
+
+.btn span {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 16px;
+   line-height: 116.6%;
+   letter-spacing: -0.03em;
+   color: #000000;
+}
+
+.btn:hover {
+   background: rgb(255, 255, 255);
+   color: black;
+   letter-spacing: .2rem;
+}
+
+
+.hero {
+   background: #029E58;
+   display: flex;
+   flex-direction: column;
+   gap: 5rem;
+   align-items: center;
+   justify-content: center;
+   z-index: 1;
+}
+
+/* Start of Navbar */
+header {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   flex-direction: row;
+   width: 100%;
+   padding: .9rem 0rem;
+}
+
+header .logo img {
+   width: 100px;
+   height: 30px;
+   Top: 0.24px;
+   Left: 0px;
+}
+
+nav {
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+}
+
+header .navbar a {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 116.6%;
+   color: #FFFFFF;
+}
+
+header .navbar a:hover {
+   letter-spacing: 0.1rem;
+   color: black;
+}
+
+/* End of Navbar */
+
+/* Home */
+.home {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   flex-wrap: wrap;
+   gap: 1.5rem;
+}
+
+.home__content {
+   display: flex;
+   gap: 1.5rem;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+}
+
+.home .content__info {
+   width: 500px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.home .content__info .info {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 100px;
+   line-height: 94.6%;
+   text-align: center;
+   letter-spacing: -0.06em;
+   color: #FFFFFF;
+}
+
+.home .content__detail {
+   width: 530px;
+}
+
+.home .content__detail .info {
+   font-family: 'DM Sans';
+   font-style: normal;
+   text-align: center;
+   letter-spacing: -0.06em;
+   color: #FFFFFF;
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 150%;
+   opacity: 0.9;
+}
+
+.download__buttons img {
+   width: 170px;
+   height: 170px;
+}
+
+.home .image {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 0;
+}
+
+.home .image img:nth-child(1) {
+   position: relative;
+   width: 700px;
+   height: 400px;
+   left: 480px;
+   /* top: -1px; */
+}
+
+.home .image img:nth-child(2) {
+   /* position: absolute; */
+   width: 700px;
+   height: 400px;
+   left: 320px;
+   /* top: -1px; */
+   z-index: 1;
+}
+
+.home .image img:nth-child(3) {
+   position: relative;
+   width: 700px;
+   height: 400px;
+   right: 400px;
+   /* top: -1px; */
+}
+
+.section {
+   display: flex;
+   flex-direction: row;
+   gap: 2rem;
+   align-items: center;
+   justify-content: center;
+   padding: 2rem 1rem;
+}
+
+/* Help */
+.help {
+   background-image: url('/Files/noise.png')
+}
+
+.left .left_image {
+   position: relative;
+   right: 2.5rem;
+   top: 3.5rem;
+   z-index: -1;
+}
+
+.left .left_image img {
+   width: 140px;
+   height: 140px;
+}
+
+.left .question {
+   width: 450px;
+}
+
+.left .question p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 72px;
+   line-height: 101.1%;
+   letter-spacing: -0.03em;
+   color: #029E58
+}
+
+.left .question__detail {
+   width: 700px;
+}
+
+.left .question__detail p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 150%;
+   opacity: 0.6;
+}
+
+.right .right_image {
+   position: relative;
+   bottom: 5rem;
+   width: 350.22px;
+   height: 438.12px;
+   z-index: -1;
+   left: 6rem;
+}
+
+/* Connect */
+
+.connect__section {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 10rem;
+}
+
+.connect {
+   display: flex;
+   gap: 2rem;
+   flex-direction: column;
+}
+
+.connect__info {
+   width: 25rem;
+}
+
+.connect__info p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 68px;
+   line-height: 101.1%;
+   letter-spacing: -0.03em;
+   color: #121212;
+}
+
+.connect__details p {
+   width: 24rem;
+}
+
+.connect__details p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 150%;
+   color: #121212;
+   opacity: 0.6;
+}
+
+.connect__section .content__image {
+   position: absolute;
+   left: 10rem;
+   width: 10px;
+   height: 100px;
+}
+
+/* Chats Section */
+.chat {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   gap: 0;
+}
+
+.top {
+   box-shadow: 0 -5px 10px -5px rgba(50, 50, 50, 0.55);
+}
+
+.columnLeft {
+   width: 50%;
+   float: left;
+   background-color: #029E58;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.columnRight {
+   width: 50%;
+   float: right;
+   background-image: url('/Files/noise.png');
+}
+
+.chat__content {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   justify-content: center;
+   padding: 5rem 5rem 0rem 10rem;
+}
+
+.chat .buttons {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.chat .buttons .chat_btn {
+   border: 2px solid #FFBB62;
+   padding: .4rem;
+   border-radius: 50px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.chat .chat__info {
+   width: 25rem;
+}
+
+.chat .chat__info p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 68px;
+   line-height: 100.1%;
+   letter-spacing: -0.03em;
+   color: #FFFFFF;
+}
+
+.chat .chat__detail {
+   width: 23rem;
+}
+
+.chat .chat__detail p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 150%;
+   color: #FFFFFF;
+   opacity: 0.9;
+}
+
+.chat__image {
+   display: flex;
+   flex-direction: column;
+   padding: 0 0 0 3rem;
+}
+
+.profile {
+   display: flex;
+   align-items: center;
+   gap: 1rem;
+   background: white;
+   padding: .3rem;
+   width: 27rem;
+}
+
+.chats {
+   padding: 0 0 0 2rem;
+}
+
+.chats .tab1 {
+   position: relative;
+   left: 10rem;
+   top: 2rem;
+   width: 15rem;
+   background: #fff;
+   border-radius: 10px;
+   text-align: right;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   border-bottom-right-radius: 25px;
+}
+
+.chats .tab1 span {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 150%;
+   color: #000;
+}
+
+.chats .tab {
+   position: relative;
+   top: 3rem;
+   width: 10rem;
+   margin-bottom: 1rem;
+   background: #fff;
+   border-radius: 10px;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   border-bottom-left-radius: 25px;
+}
+
+.chats .tab span {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 150%;
+   color: #000;
+}
+
+.chats .tag {
+   position: relative;
+   top: 3rem;
+   width: 15rem;
+   margin-bottom: 1rem;
+   background: #fff;
+   border-radius: 10px;
+   padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   border-bottom-left-radius: 25px;
+}
+
+.chats .tag span {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 150%;
+   color: #000;
+}
+
+.textArea {
+   margin-top: 5rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   gap: 1rem;
+   background: white;
+   padding: .3rem .3rem .9rem .3rem;
+   width: 27rem;
+}
+
+.textArea .text {
+   background: #F3F3F3;
+   border-radius: 10px;
+   padding: .2rem;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 20rem;
+}
+
+.textArea .text input {
+   background: transparent
+}
+
+/* Earn Section */
+.Earn__section {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 10rem;
+}
+
+.Earn__content {
+   display: flex;
+   flex-direction: column;
+   gap: 2rem;
+}
+
+.Earn__section .Earn__content {
+   width: 25rem;
+}
+
+.Earn__content .earn__info p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 68px;
+   line-height: 101.1%;
+   letter-spacing: -0.03em;
+   color: #121212;
+}
+
+.Earn__content .earn__detail p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 150%;
+   color: #121212;
+   opacity: 0.6;
+}
+
+
+/* Fliter Section */
+.Fliter {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.FliterLeft {
+   width: 50%;
+   float: left;
+   background: #363636;
+   background-image: url('/Files/request2.png');
+   display: flex;
+   /* align-items: center;
+   justify-content: center; */
+}
+
+.FliterRight {
+   width: 50%;
+   float: right;
+   background-color: black;
+   background-image: url('/Files/Noise2.png');
+   align-items: center;
+   justify-content: center;
+}
+
+.FliterRight .Fliter__content {
+   display: flex;
+   flex-direction: column;
+   gap: 1rem;
+   padding: 5rem 5rem 0rem 10rem;
+}
+
+.FliterLeft .Fliter__image {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   margin: 0rem 5rem 0rem 5rem;
+   width: 100%;
+   /* background-color: #000; */
+   height: 100%;
+   /* border: .1rem solid #029C56 */
+}
+
+.FliterLeft .Fliter__image img {
+   width: 100%;
+   height: 100%;
+}
+
+
+.Fliter .FliterLeft .Fliter__image .FliterCard {
+   display: flex;
+   gap: 2rem;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   background: #b11d1d;
+   width: 25rem;
+   border-radius: 10px;
+   padding: .5rem;
+}
+
+.Fliter .FliterLeft .Fliter__image .tops {
+   background: transparent;
+   width: 25rem;
+   height: 10rem;
+}
+
+.Fliter .FliterLeft .Fliter__image .cardInfo {
+   display: flex;
+   gap: 1rem;
+   align-items: center;
+   justify-content: center;
+   width: 22rem;
+}
+
+.Fliter .FliterLeft .Fliter__image .Requestbuttons {
+   display: flex;
+   flex-direction: row;
+   gap: 1rem;
+   align-items: center;
+   justify-content: center;
+}
+
+.Fliter .FliterLeft .Fliter__image .Requestbuttons .bttn:nth-child(1) {
+   border-radius: 10px;
+   width: 10rem;
+   display: flex;
+   padding: .5rem;
+   background: #E34D4D;
+   align-items: center;
+   justify-content: center;
+}
+
+.Fliter .FliterLeft .Fliter__image .Requestbuttons .bttn:nth-child(2) {
+   border-radius: 10px;
+   width: 10rem;
+   display: flex;
+   padding: .5rem;
+   background: #029C56;
+   align-items: center;
+   justify-content: center;
+}
+
+.Fliter__content .fliter__info p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 68px;
+   line-height: 101.1%;
+   letter-spacing: -0.03em;
+   color: white;
+}
+
+.Fliter__content .fliter__detail p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 20px;
+   line-height: 150%;
+   color: white;
+   opacity: 0.6;
+}
+
+/* Assurance */
+.Assurance {
+   display: flex;
+   gap: 1rem;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+
+}
+
+.Assurance .assurance_top {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.Assurance .assurance__content .assurance__Image img{
+   width: 30rem;
+   /* height: 1170.52px; */
+   /* left: 563px;
+   top: 4890px; */
+}
+
+.Assurance .assurance__content .assurance__title p {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 68px;
+   line-height: 101.1%;
+   letter-spacing: -0.03em;
+   color: #007640;
+}
+
+.Assurance .ad {
+   background-color: #029E58;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 1rem;
+   padding: 2rem 2rem 0rem 2rem;
+   border-radius: 20px;
+   background-image: url('/Files/noise.png');
+   position: relative;
+   top: -15rem;
+   width: 60rem;
+}
+
+.Assurance .ad .ad_Image{
+   position: relative;
+   top: 8px;
+}
+
+.Assurance .ad .ad_Image img {
+   width: 350px;
+   height: 500px;
+}
+
+.Assurance .ad .ad_Info p:nth-child(1) {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 70px;
+   line-height: 102.6%;
+   letter-spacing: -0.03em;
+   color: #FFFFFF;
+   width: 20rem;
+}
+
+.Assurance .ad .ad_Info p:nth-child(2) {
+   font-family: 'DM Sans';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 150%;
+   color: #FFFFFF;
+}
+
+/* Footer */
+.footer {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap:1rem;
+}
+
+.footer_content{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   gap: 3rem;
+}
+
+#menu-bars {
+   position: fixed;
+   top: 1rem;
+   right: 1rem;
+   z-index: 10000;
+   background: black;
+   color: #fff;
+   border-radius: .5rem;
+   padding: 1rem 1.5rem;
+   font-size: 3rem;
+   cursor: pointer;
+   display: none;
+}
