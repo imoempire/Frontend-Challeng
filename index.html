@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./CSS/styles.css" />
+    <link rel="stylesheet" href="/CSS/responsive.css">
     <link
       href="https://fonts.googleapis.com/css?family=DM Sans"
       rel="stylesheet"
@@ -78,6 +79,7 @@
         />
       </div>
     </section>
+
     <!-- Connecting Section -->
     <section class="section connect__section" id="connect">
       <div class="connect">
@@ -99,8 +101,10 @@
         <img class="connect__image" src="./Files/connect.png" alt="" />
       </div>
     </section>
+
     <!-- Chat -->
     <section class="chat top">
+      <!-- Left -->
       <div class="columnLeft">
         <div class="chat__content">
           <div class="buttons">
@@ -123,6 +127,7 @@
           </div>
         </div>
       </div>
+      <!-- Right -->
       <div class="columnRight">
         <div class="chat__image">
           <div class="profile">
@@ -158,34 +163,33 @@
             <div class="text">
               <input type="text" placeholder="sorry. Another time" />
               <div>
-                <span
-                  class="iconify"
-                  data-icon="eva:arrow-ios-back-outline"
-                  style="color: black"
-                  data-width="40"
-                ></span>
-                <span
-                  class="iconify"
-                  data-icon="eva:arrow-ios-back-outline"
-                  style="color: black"
-                  data-width="40"
-                ></span>
+                <iconify-icon
+                  icon="carbon:attachment"
+                  rotate="90deg"
+                  width="30"
+                  style="color: #bbbbbb"
+                ></iconify-icon>
+                <iconify-icon
+                  width="30"
+                  style="color: #bbbbbb"
+                  icon="ant-design:audio-outlined"
+                ></iconify-icon>
               </div>
             </div>
             <div class="send">
-              <span
-                class="iconify"
-                data-icon="eva:arrow-ios-back-outline"
+              <iconify-icon
+                icon="akar-icons:send"
                 style="color: black"
-                data-width="40"
-              ></span>
+                width="30"
+              ></iconify-icon>
             </div>
           </div>
         </div>
       </div>
     </section>
+
     <!-- Earn Section -->
-    <section class="section Earn__section">
+    <section class="Earn__section">
       <div class="Earn__Image">
         <img src="./Files/phone2.png" alt="" />
       </div>
@@ -210,7 +214,7 @@
       <!-- left -->
       <div class="FliterLeft">
         <div class="Fliter__image">
-          <!-- <img src="/Files/request2.png" alt="" /> -->
+          <img src="/Files/request3.png" alt="" />
         </div>
       </div>
       <!-- right -->
@@ -241,10 +245,45 @@
           <div class="assurance__title">
             <p>The ear1 assurance</p>
           </div>
-          <div class="assurance__detail"></div>
+          <div class="assurance__detail">
+            <section class="chain" id="chain">
+              <div class="container">
+                <div class="box">
+                  <div class="content">
+                    <span> Ease of Use </span>
+                    <h3>
+                      With as simple of 3 steps, you can get started using ear1.
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="box">
+                  <div class="content">
+                    <span> Multi currency support </span>
+                    <h3>
+                      Ear1 allows you to pay with a wide range of currencies.
+                    </h3>
+                  </div>
+                </div>
+
+                <div class="box1">
+                  <div class="content">
+                    <span> Secure communication </span>
+                    <h3>
+                      State of the art end to end encryption of messages. No
+                      weird sort of tracking. Your privacy is our concern.
+                    </h3>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-        <div class="assurance__Image">
-          <img style="width: 30rem" class="assurance__Image" assurance__Image src="/Files/Assurance.png" alt="" />
+        <div class="assurance__image">
+          <img
+            src="/Files/Assurance.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="assurance_bottom">
@@ -262,19 +301,69 @@
           </div>
         </div>
       </div>
+      <hr class="Line" />
     </section>
 
     <!-- Footer -->
     <section class="footer">
-      <div class="email"></div>
       <div class="footer_content">
         <div class="footer_logo">
-          <img src="/Files/Footer Logo Variation.svg" alt="">
+          <div>
+            <img src="/Files/Footer Logo Variation.svg" alt="" />
+          </div>
+          <div class="social_icons">
+            <div class="social_icon">
+              <iconify-icon icon="ri:facebook-line"></iconify-icon>
+            </div>
+            <div class="social_icon">
+              <iconify-icon icon="eva:twitter-outline"></iconify-icon>
+            </div>
+            <div class="social_icon">
+              <iconify-icon icon="ant-design:instagram-outlined"></iconify-icon>
+            </div>
+          </div>
         </div>
-        <div class="footer_content"></div>
+        <!-- Table -->
+        <div class="footerTable_content">
+          <div class="email">
+            <p>Be in the know. Get access to amazing offers and discounts</p>
+            <div class="footer_Input">
+              <input class="footInput" type="text" placeholder="Enter your email address" />
+              <span class="send"> SUBMIT </span>
+            </div>
+          </div>
+          <table>
+            <tr>
+              <th>Links</th>
+              <th>Get Help</th>
+              <th>Download</th>
+              <th>Resources</th>
+            </tr>
+            <tr>
+              <td>Home</td>
+              <td>Support</td>
+              <td>Android</td>
+              <td>Terms of Service</td>
+            </tr>
+            <tr>
+              <td>For Fans</td>
+              <td>FAQ's</td>
+              <td>IOS</td>
+              <td>Privacy Policy</td>
+            </tr>
+            <tr>
+              <td>For influencers</td>
+              <td>Partnerships</td>
+            </tr>
+            <tr>
+              <td>FAQ's</td>
+            </tr>
+          </table>
+        </div>
+        <!-- End Of Table -->
       </div>
     </section>
 
-    <script src="https://code.iconify.design/2/2.0.3/iconify.min.js"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
   </body>
 </html>
