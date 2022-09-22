@@ -230,7 +230,7 @@
    }
 
    .textArea {
-      gap: 1rem;
+      gap: .8rem;
       width: 15rem;
    }
 
@@ -240,8 +240,8 @@
       padding: .2rem;
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      width: 10rem;
+      justify-content: space-around;
+      width: 15rem;
    }
 
    .textArea .text input::placeholder {

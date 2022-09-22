@@ -498,6 +498,12 @@ header .navbar a:hover {
    background: transparent
 }
 
+.textArea .text .text_icons{
+   display: flex;
+   flex-direction: row;
+   gap: .6rem;
+}
+
 /* Earn Section */
 .Earn__section {
    display: flex;
