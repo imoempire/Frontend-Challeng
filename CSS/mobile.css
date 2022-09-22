@@ -1,18 +1,24 @@
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 450px) {
 
    /* Start of Navbar */
+
+   header {
+      gap: 1rem;
+      padding: .9rem 0rem;
+   }
+
    header .logo img {
-      width: 100px;
-      height: 50px;
+      width: 50px;
+      height: 20px;
       margin-top: 0.6rem;
    }
 
    nav {
-      gap: 1rem;
+      gap: .2rem;
    }
 
    header .navbar a {
-      font-size: 20px;
+      font-size: 10px;
       line-height: 11.6%;
    }
 
@@ -28,36 +34,36 @@
    }
 
    .home .content__info .info {
-      font-size: 70px;
+      font-size: 35px;
    }
 
    .home .content__detail {
-      width: 400px;
+      width: 200px;
    }
 
    .home .download__buttons img {
-      width: 150px;
-      height: 150px;
+      width: 100px;
+      height: 100px;
    }
 
    .home .image img:nth-child(1) {
-      width: 300px;
-      height: 150px;
-      left: 9.6rem;
+      width: 200px;
+      height: 100px;
+      left: 6.6rem;
       z-index: 1;
    }
 
    .home .image img:nth-child(2) {
-      width: 250px;
-      height: 150px;
+      width: 200px;
+      height: 100px;
       z-index: 1;
    }
 
    .home .image img:nth-child(3) {
       position: relative;
-      width: 300px;
-      height: 150px;
-      right: 8.6rem;
+      width: 200px;
+      height: 100px;
+      right: 6rem;
    }
 
    /* Help */
@@ -66,61 +72,61 @@
    }
 
    .left .left_image {
-      right: 3rem;
-      top: 2.5rem;
+      right: 2.3rem;
+      top: 1.5rem;
       z-index: -1;
    }
 
    .left .left_image img {
-      width: 7rem;
-      height: 4rem;
+      width: 5rem;
+      height: 2rem;
    }
 
    .left .question {
-      width: 400px;
+      width: 150px;
    }
 
    .left .question p {
-      font-size: 50px;
+      font-size: 22px;
    }
 
    .left .question__detail {
-      width: 600px;
+      width: 300px;
    }
 
    .left .question__detail p {
-      font-size: 15px;
+      font-size: 10px;
    }
 
    .left .right_image {
       position: relative;
-      bottom: 13rem;
-      width: 200px;
-      height: 150px;
+      bottom: 8.6rem;
+      width: 100px;
+      height: 100px;
       z-index: -1;
-      left: 22rem;
+      left: 10rem;
    }
 
    /* Connect */
-   .connect__section {
-      flex-direction: row;
-      gap: 5rem;
-   }
-
    .connect__info {
-      width: 17rem;
+      width: 15rem;
    }
 
    .connect__info p {
-      font-size: 50px;
+      font-size: 18px;
    }
 
    .connect__details p {
-      width: 17rem;
+      width: 14rem;
    }
 
    .connect__details p {
-      font-size: 15px;
+      font-size: 10px;
+   }
+
+   .connect__section {
+      flex-direction: column;
+      gap: 2rem;
    }
 
    .connect {
@@ -128,26 +134,28 @@
    }
 
    .connect__section .connect__image {
-      width: 15rem;
-      height: 15rem;
+      width: 10rem;
+      height: 10rem;
    }
 
    /* Chat */
    .chat {
-      flex-direction: row;
+      flex-direction: column;
    }
 
    .columnLeft {
-      width: 50%;
+      width: 100%;
       background-color: #029E58;
    }
+
+
 
    .chat__content {
       display: flex;
       flex-direction: column;
       gap: 1rem;
       justify-content: center;
-      padding: 2rem 5rem 2rem 2rem;
+      padding: 2rem 5rem 2rem 1rem;
    }
 
    .chat .buttons {
@@ -158,25 +166,25 @@
    }
 
    .chat .chat__info {
-      width: 15rem;
+      width: 6rem;
    }
 
    .chat .chat__info p {
-      font-size: 50px;
+      font-size: 18px;
    }
 
 
    .chat .chat__detail {
-      width: 17rem;
+      width: 15rem;
    }
 
    .chat .chat__detail p {
-      font-size: 15px;
+      font-size: 10px;
    }
 
    /* Right */
    .columnRight {
-      width: 50%;
+      width: 100%;
    }
 
    .chat__image {
@@ -184,7 +192,7 @@
    }
 
    .profile {
-      width: 20rem;
+      width: 15rem;
    }
 
    .profile .profile_img img {
@@ -197,99 +205,97 @@
 
    .chats .tab1 {
       left: 5rem;
-      width: 15rem;
+      width: 10rem;
       padding: .5rem;
-      margin-bottom: .4rem;
    }
 
    .chats .tab1 span {
-      font-size: 13px;
+      font-size: 10px;
    }
 
    .chats .tab {
-      width: 9rem;
-      margin-bottom: .5rem;
-
+      width: 8rem;
    }
 
    .chats .tab span {
-      font-size: 13px;
+      font-size: 10px;
    }
 
    .chats .tag {
-      width: 11rem;
-      margin-bottom: .5rem;
+      width: 10rem;
    }
 
    .chats .tag span {
-      font-size: 15px;
+      font-size: 10px;
    }
 
    .textArea {
       gap: 1rem;
-      width: 20rem;
-      margin-top: 3rem;
-   }
-
-   .textArea .text {
       width: 15rem;
    }
 
+   .textArea .text {
+      background: #F3F3F3;
+      border-radius: 10px;
+      padding: .2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 10rem;
+   }
+
    .textArea .text input::placeholder {
-      font-size: 15px
+      font-size: 10px
    }
 
    /* Earn  */
    .Earn__section {
-      flex-direction: row;
-      gap: 1rem;
+      flex-direction: column;
+      gap: .1rem;
       padding: .1rem 0 0 0;
    }
 
    .Earn__section .Earn__Image img {
       position: relative;
-      right: 7rem;
-      width: 25rem;
-      height: 18rem;
+      right: 1rem;
+      width: 15rem;
+      height: 10rem;
    }
 
    .Earn__section .Earn__content {
-      width: 15rem;
+      width: 10rem;
    }
 
    .Earn__content {
-      gap: 1rem;
+      gap: 1.5rem;
       padding: 1rem 0;
    }
 
    .Earn__content .earn__info p {
-      font-size: 50px;
+      font-size: 28px;
    }
 
-   .Earn__content .earn__info {
-      width: 15rem;
-   }
 
    .Earn__content .earn__detail {
-      width: 18rem;
+      width: 10rem;
    }
 
    .Earn__content .earn__detail p {
-      font-size: 15px;
+      font-size: 10px;
    }
 
    /* Fliter Section */
    .Fliter {
-      flex-direction: row;
+      flex-direction: column;
    }
 
    .FliterLeft {
-      width: 50%;
+      width: 100%;
       height: 370px;
    }
 
    .FliterLeft .Fliter__image {
-      margin: 0rem 5rem 0rem 5rem;
+      margin: 0rem 5rem 0rem 1rem;
       top: -2.4rem;
    }
 
@@ -298,28 +304,28 @@
    }
 
    .FliterRight {
-      width: 50%;
+      width: 100%;
    }
 
    .FliterRight .Fliter__content {
       gap: 1rem;
-      padding: 2rem 5rem 1rem 5rem;
+      padding: 2rem 5rem 1rem 1rem;
    }
 
    .Fliter__content .fliter__info p {
-      font-size: 50px;
+      font-size: 28px;
    }
 
    .Fliter__content .fliter__info {
-      width: 18rem;
+      width: 9rem;
    }
 
    .Fliter__content .fliter__detail p {
-      font-size: 15px;
+      font-size: 10px;
    }
 
    .Fliter__content .fliter__detail {
-      width: 17rem;
+      width: 10rem;
    }
 
    /* Assurance */
@@ -329,12 +335,12 @@
    }
 
    .Assurance .assurance_top {
-      flex-direction: row;
+      flex-direction: column;
       gap: 2rem
    }
 
    .Assurance .assurance__content .assurance__title p {
-      font-size: 50px;
+      font-size: 28px;
    }
 
    .Assurance .assurance__content .assurance__title {
@@ -375,8 +381,7 @@
    .Assurance .ad {
       padding: .5rem .5rem 0rem .8rem;
       border-radius: 2rem;
-      top: -8rem;
-      width: 35rem;
+      width: 15rem;
    }
 
    .Assurance .ad .ad_Image {
@@ -385,28 +390,28 @@
    }
 
    .Assurance .ad .ad_Image img {
-      width: 200px;
-      height: 380px;
+      width: 100px;
+      height: 180px;
    }
 
    .Assurance .ad .ad_Info {
       display: flex;
       flex-direction: column;
-      gap: .7rem;
+      gap: .1rem;
    }
 
    .Assurance .ad .ad_Info p:nth-child(1) {
-      font-size: 50px;
-      width: 18rem;
+      font-size: 20px;
+      width: 6rem;
    }
 
    .Assurance .ad .ad_Info p:nth-child(2) {
-      font-size: 15px;
-      /* width: 10rem; */
+      font-size: 10px;
+      width: 6rem;
    }
 
    .assurance_bottom .download__buttons img {
-      width: 100px;
+      width: 70px;
       height: 200px;
    }
 
@@ -424,25 +429,26 @@
    }
 
    .footer_content {
-      gap: 2rem;
-   }
-
-   .footer_logo {
-      top: 3rem;
-   }
-
-   .footer_logo img {
-      width: 100px;
-   }
-
-   .email {
-      margin: 2rem 0;
       gap: 1rem;
    }
 
+   .footer_logo {
+      top: 1rem;
+   }
+
+   .footer_logo img {
+      width: 80px;
+   }
+
+   .email {
+      margin: 1rem 0;
+      gap: .5rem;
+      flex-direction: column;
+   }
+
    .email p {
-      font-size: 15px;
-      /* width: 9rem; */
+      font-size: 8px;
+      width: 9rem;
    }
 
    .footer_Input {
@@ -451,53 +457,54 @@
 
    .footer_Input input {
       padding: .1px .2rem;
-      width: 20rem;
+      width: 6rem;
    }
 
    .footer_Input input::placeholder {
-      font-size: 15px;
+      font-size: 10px;
    }
 
    .footer_Input .send {
       border-top-right-radius: 5px;
       border-bottom-right-radius: 5px;
       padding: 0 .8rem;
-      font-size: 15px;
+      font-size: 5px;
    }
 
 
    .footerTable_content table {
-      width: 25rem;
+      width: 10rem;
    }
 
    .footerTable_content table tr th {
-      font-size: 15px;
+      font-size: 6px;
       padding-bottom: 10px;
    }
 
    .footerTable_content table tr td {
-      font-size: 15px;
+      font-size: 6px;
    }
 
    .footer .social_icons .social_icon {
       margin: 2px;
-      padding: 10px
+      padding: 5px;
+      font-size: 10px;
    }
 
    .hero {
       gap: .1rem;
    }
 
-   /* #menu-bars {
+   #menu-bars {
       display: initial;
-   } */
+   }
 
-   /* header {
+   header {
       left: -120%;
-   } */
+   }
 
-   /* header.active {
+   header.active {
       left: 0%;
-   } */
+   }
 
 }
