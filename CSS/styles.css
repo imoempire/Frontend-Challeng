@@ -206,7 +206,8 @@ header .navbar a:hover {
 .help {
    background-image: url('/Files/noise.png');
    background: rgba(240, 240, 230, 0.5);
-   padding: 4rem 0rem;
+   padding: 20rem 0rem 0rem 0rem;
+   height: 30rem;
 }
 
 .left .left_image {
@@ -248,13 +249,13 @@ header .navbar a:hover {
    opacity: 0.6;
 }
 
-.right .right_image {
+.left .right_image {
    position: relative;
-   bottom: 5rem;
+   bottom: 26rem;
    width: 350.22px;
    height: 438.12px;
    z-index: -1;
-   left: 6rem;
+   left: 26rem;
 }
 
 /* Connect */
@@ -303,8 +304,8 @@ header .navbar a:hover {
 }
 
 .connect__section .connect__image {
-   width: 25rem;
-   height: 25rem;
+   width: 20rem;
+   height: 20rem;
 }
 
 /* Chats Section */
@@ -843,6 +844,7 @@ header .navbar a:hover {
 
 .email {
    display: flex;
+   flex-direction: column;
    margin: 2rem 0;
 }
 
@@ -875,7 +877,7 @@ header .navbar a:hover {
    flex-direction: row;
    align-items: center;
    justify-content: center;
-   gap: 10rem;
+   gap: 6rem;
 }
 
 .footer_logo {
@@ -925,10 +927,12 @@ header .navbar a:hover {
    position: relative;
    top: 1rem;
    right: -7rem;
+   padding: .1rem;
    z-index: 1;
    background: black;
    color: #fff;
    font-size: 1rem;
    cursor: pointer;
    display: none;
+   border-radius: 5px;
 }
